@@ -30,11 +30,11 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "GiaHuy Farm"})
-          local Tab2o = MakeTab({Name = "GiaHuy rương"})
-          local Tab3o = MakeTab({Name = "GiaHuy Sv Hop"})
-               local Tab4o = MakeTab({Name = "GiaHuy Fruits"})
-               local Tab5o = MakeTab({Name = "GiaHuy Bounty"})
+     local Tab1o = MakeTab({Name = "Farm"})
+          local Tab2o = MakeTab({Name = "nhặt rương"})
+          local Tab3o = MakeTab({Name = "Sv Hop dg lỗi"})
+               local Tab4o = MakeTab({Name = "nhặt trái Fruits"})
+               local Tab5o = MakeTab({Name = " hunt Bounty"})
 ------- BUTTON
     
     AddButton(Tab1o, {
