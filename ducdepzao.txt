@@ -197,14 +197,9 @@ loadstring(game:HttpGet('https://skullhub.xyz/loader.lua'))()(Settings)
   end
   })
       AddButton(Tab3o, {
-     Name = "Min Sever hop  Hop",
+     Name = "Min Sever hop",
     Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopFull"))()(Settings)
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword"))()
   end
   })
       AddButton(Tab4o, {
