@@ -32,7 +32,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 ------ Tab
      local Tab1o = MakeTab({Name = "Farm"})
           local Tab2o = MakeTab({Name = "nhặt rương"})
-          local Tab3o = MakeTab({Name = "Sv Hop dg lỗi"})
+          local Tab3o = MakeTab({Name = "Sv Hop chx ra bản nào"})
                local Tab4o = MakeTab({Name = "nhặt trái Fruits"})
                local Tab5o = MakeTab({Name = " hunt Bounty"})
 ------- BUTTON
@@ -104,14 +104,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Efe0626/ZenithHub/ref
   end
   })
       AddButton(Tab1o, {
-     Name = "W Azure",
+     Name = "banana freemiun 2",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()(Settings)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kimprobloxdz/Banana-Free/refs/heads/main/Protected_5609200582002947.lua.txt"))()
   end
   })
       AddButton(Tab1o, {
