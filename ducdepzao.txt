@@ -31,10 +31,10 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
       
 ------ Tab
      local Tab1o = MakeTab({Name = "Farm"})
-          local Tab2o = MakeTab({Name = "nhặt rương"})
+          local Tab2o = MakeTab({Name = "Đức nhặt rương"})
           local Tab3o = MakeTab({Name = "Sv Hop chx ra bản nào"})
-               local Tab4o = MakeTab({Name = "nhặt trái Fruits"})
-               local Tab5o = MakeTab({Name = " hunt Bounty"})
+               local Tab4o = MakeTab({Name = "Đức Fruits"})
+               local Tab5o = MakeTab({Name = "hunt Bounty vx lỗi"})
 ------- BUTTON
     
     AddButton(Tab1o, {
@@ -214,7 +214,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-F
   end
   })
   AddButton(Tab3o, {
-     Name = "Teddy lỗi khi nào rảnh r sửa",
+     Name = "Teddy chx ra bản nào :((",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
