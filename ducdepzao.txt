@@ -34,7 +34,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
           local Tab2o = MakeTab({Name = "Đức nhặt rương"})
           local Tab3o = MakeTab({Name = "Sv Hop chx ra bản nào"})
                local Tab4o = MakeTab({Name = "Đức Fruits"})
-               local Tab5o = MakeTab({Name = "hunt Bounty vx lỗi"})
+               local Tab5o = MakeTab({Name = "hunt Bounty đã ra bản mới"})
 ------- BUTTON
     
     AddButton(Tab1o, {
@@ -225,285 +225,85 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
   end
   })
   AddButton(Tab5o, {
-     Name = "Xero Bounty",
+     Name = "lion Bounty",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-getgenv().Configs = {
-
-    ["Team"] = "Pirates", -- Pirates/Marines
-
-    ["Speed Tween"] = 350, -- Highly recommend 300 speed is good enough to anti security kick. maximum you can use is 350
-
-    ["Auto turn on race v3"] = true,
-
-    ["Auto turn on race v4"] = true,
-
-    ["Click Time"] = 0.2,
-
-    ["White Screen"] = false, -- false / true
-
-    ["Chat"] = {
-
-        ["Enable"] = false,
-
-        ["Message"] = {"", "", "", ""}, -- Input your message here
-
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = "Pirates"
+getgenv().Config = {
+    ["Safe Health"] = {50},
+    ["Custom Y Run"] = {
+        Enabled = true,
+        ["Y Run"] = 5000
     },
-
-    ["Run When Low Health"] = {
-
-        ["Enable"] = false,
-
-        ["Health"] = 3000,
-
-        ["Come back"] = true
-
+    ["Hunt Method"] = {
+        ["Use Move Predict"] = false,
+        ["Hit and Run"] = false,
+        ["Aimbot"] = true,
+        ["ESP Player"] = true,
+        ["Max Attack Time"] = 60
     },
-
-    ["Region"] = "United States", -- Singapore, United States, Germany, France, India, ??? ... or "All"
-
-    ["Weapons"] = {
-
-        ["Melee"] = {
-
-            ["Enable"] = true,
-
-            ["Delay"] = 3,
-
-            ["Order"] = 3,
-
-            ["Skills"] = {
-
-                ["Z"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0.6,
-
-                    ["Order"] = 2,
-
-                    ["Time to next skill"] = 0.5
-
-                },
-
-                ["X"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0.2,
-
-                    ["Order"] = 1,
-
-                    ["Time to next skill"] = 0.5
-
-                },
-
-                ["C"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0.1,
-
-                    ["Order"] = 3,
-
-                    ["Time to next skill"] = 0.5
-
-                }
-
+    ["Shop"] = {
+        ["Random Fruit"] = false,
+        ["Store Fruit"] = true,
+        ["Zoro Sword"] = false
+    },
+    ["Setting"] = {
+        ["World"] = 3,
+        ["White Screen"] = false,
+        ["Url"] = "Your_Webhook_Url"
+    },
+    ["Skip"] = {
+        ["Avoid V4"] = false
+    },
+    ["Spam All Skill On V4"] = {
+        Enabled = true,
+        ["Weapons"] = {"Melee", "Sword", "Gun", "Devil Fruit"}
+    },
+    Items = {
+        Use = {"Melee", "Sword"},
+        Melee = {
+            Enable = true,
+            Delay = 0.6,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.3},
+                X = {Enable = true, HoldTime = 0.2},
+                C = {Enable = true, HoldTime = 0.5}
             }
-
         },
-
-        ["Blox Fruit"] = {
-
-            ["Enable"] = false,
-
-            ["Delay"] = 0.2,
-
-            ["Order"] = 4,
-
-            ["Skills"] = {
-
-                ["Z"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 2,
-
-                    ["Time to next skill"] = 0
-
-                },
-
-                ["X"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 1,
-
-                    ["Time to next skill"] = 0
-
-                },
-
-                ["C"] = {
-
-                    ["Enable"] = false,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 0,
-
-                    ["Time to next skill"] = 0
-
-                },
-
-                ["V"] = {
-
-                    ["Enable"] = false,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 0,
-
-                    ["Time to next skill"] = 0
-
-                },
-
-                ["F"] = {
-
-                    ["Enable"] = false,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 0,
-
-                    ["Time to next skill"] = 0
-
-                }
-
+        Sword = {
+            Enable = true,
+            Delay = 0.5,
+            Skills = {
+                Z = {Enable = true, HoldTime = 1},
+                X = {Enable = true, HoldTime = 0}
             }
-
         },
-
-        ["Sword"] = {
-
-            ["Enable"] = true,
-
-            ["Delay"] = 1,
-
-            ["Order"] = 1,
-
-            ["Skills"] = {
-
-                ["Z"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0.3,
-
-                    ["Order"] = 1,
-
-                    ["Time to next skill"] = 0.5
-
-                },
-
-                ["X"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0.4,
-
-                    ["Order"] = 2,
-
-                    ["Time to next skill"] = 0.5
-
-                }
-
+        Gun = {
+            Enable = false,
+            Delay = 0.05,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.05},
+                X = {Enable = true, HoldTime = 0.05}
             }
-
         },
-
-        ["Gun"] = {
-
-            ["Enable"] = false,
-
-            ["Delay"] = 1.5,
-
-            ["Order"] = 2,
-
-            ["Skills"] = {
-
-                ["Z"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 2,
-
-                    ["Time to next skill"] = 0
-
-                },
-
-                ["X"] = {
-
-                    ["Enable"] = true,
-
-                    ["HoldTime"] = 0,
-
-                    ["Order"] = 1,
-
-                    ["Time to next skill"] = 0
-
-                }
-
+        ["Devil Fruit"] = {
+            Enable = false,
+            Delay = 0.05,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.05},
+                X = {Enable = true, HoldTime = 0.05},
+                C = {Enable = true, HoldTime = 0.05},
+                V = {Enable = true, HoldTime = 0.05},
+                F = {Enable = true, HoldTime = 0.05}
             }
-
         }
-
-    },
-
-    ["Theme"] = {
-
-        ["Enable"] = true,
-
-        ["Hide Theme"] = true,
-
-        ["Name"] = "Gojo", -- Gojo
-
-        ["Custom Theme"] = {
-
-            ["Enable"] = false, -- enable theme first
-
-            ["Text Color"] = Color3.fromRGB(231, 85, 88),
-
-            ["Character Position"] = UDim2.new(0.563000023, 0, -0.174999997, 0),
-
-            ["Character Size"] = UDim2.new(0.3, 0, 1.4, 0)
-
-        }
-
-    },
-
-    ["Webhook"] = {
-
-        ["Enable"] = false,
-
-        ["Url"] = "",
-
-        ["Image"] = "https://media.discordapp.net/attachments/1162947702615711765/1229739840661094451/background.png?ex=67576eb9&is=67561d39&hm=da94e1b066b7a974e1577fe4fb355ce2907de8acf56aa4c467d7023a59d1d927&=&format=webp&quality=lossless&width=692&height=395"
-
     }
-
 }
-
-repeat task.wait(1) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/bounty.lua"))() end) until getgenv().Execution(Settings)
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/10f7f97cebba24a87808c36ebd345a97.lua"))()
   end
   })
