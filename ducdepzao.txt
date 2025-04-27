@@ -35,7 +35,6 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
           local Tab3o = MakeTab({Name = "Sv Hop chx ra bản nào"})
                local Tab4o = MakeTab({Name = "Đức Fruits"})
                local Tab5o = MakeTab({Name = "hunt Bounty đã ra bản mới"})
-                    local Tab6o = MakeTab({Name = "death rail"})
 ------- BUTTON
     
     AddButton(Tab1o, {
