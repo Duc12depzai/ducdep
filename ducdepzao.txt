@@ -35,6 +35,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
           local Tab3o = MakeTab({Name = "Sv Hop chx ra bản nào"})
                local Tab4o = MakeTab({Name = "Đức Fruits"})
                local Tab5o = MakeTab({Name = "hunt Bounty đã ra bản mới"})
+               local Tab6o = MakeTab({Name = "death rail"})
 ------- BUTTON
     
     AddButton(Tab1o, {
@@ -307,3 +308,13 @@ getgenv().Config = {
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/10f7f97cebba24a87808c36ebd345a97.lua"))()
   end
   })
+  AddButton(Ta6o, {
+     Name = "auto bond no key",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DonjoScripts/Public-Scripts/refs/heads/Slap-Battles/TheFastestBondStealer.lua'))()
+end
